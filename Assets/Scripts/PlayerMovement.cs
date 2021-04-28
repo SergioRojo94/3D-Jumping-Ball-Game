@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour {
@@ -8,6 +9,7 @@ public class PlayerMovement : MonoBehaviour {
     Vector3 vec;
     int length;
     bool isGameOver = false;
+
     [SerializeField] float playerSpeed;
     [SerializeField] float jumpForce;
 
@@ -23,14 +25,32 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     void Update() {
+        //if (Input.GetKeyUp(KeyCode.Space))
+        // {
         if (Input.GetKeyUp(KeyCode.Space))
             jump = true;
+     /*   if (Input.touchCount > 0)
+            {
+                Touch touch = Input.GetTouch(0);
+                switch (touch.phase)
+                {
+                    // So if touch began
+                    case TouchPhase.Began:
+
+                        jump = true;
+                        break;
+                }
+            }*/
+        //}
+            
 
         if (!isGameOver) {
             float playerY = transform.position.y;
             if(playerY < -32f || playerY > 32f) {
-                isGameOver = true;
-                Invoke("RestartGame", .3f);
+                if(SceneManager.GetActiveScene().name != "MainMenu") {
+                    isGameOver = true;
+                    Invoke("RestartGame", .3f);
+                }
             }
         }
     }
@@ -48,11 +68,11 @@ public class PlayerMovement : MonoBehaviour {
     }
     //Player moves forward every frame
     void FixedUpdate() {
-        rb.AddForce(Vector3.forward * playerSpeed * Time.fixedDeltaTime);
-        if (jump) {
-            rb.AddForce(Vector3.up * jumpForce * 1000 * Time.fixedDeltaTime);
-            jump = false;
-        }
+            rb.AddForce(Vector3.forward * playerSpeed * Time.fixedDeltaTime);
+            if (jump) {
+                rb.AddForce(Vector3.up * jumpForce * 1000 * Time.fixedDeltaTime);
+                jump = false;
+            }
     }
 
     void LateUpdate() {
