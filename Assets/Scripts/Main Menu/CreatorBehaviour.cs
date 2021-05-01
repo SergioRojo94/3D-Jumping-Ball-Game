@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 //Creates obstacles randomly and moves forward
 public class CreatorBehaviour : MonoBehaviour
@@ -14,14 +15,18 @@ public class CreatorBehaviour : MonoBehaviour
 
     Rigidbody rb;
     [SerializeField] float speed;
-
+    [SerializeField] bool inMenu = false;
     void Start() {
         rb = GetComponent<Rigidbody>();
         StartGenerator();
+        if (inMenu == true)
+            obstaclePosY = 0;
     }
     void FixedUpdate() {
         rb.AddForce(Vector3.forward * speed * Time.fixedDeltaTime);
     }
+
+    //Generate Obstacles randomly
     void CreateObstacle() {
         length = obstacles.Length;
         vec.z += obstacleDistance;

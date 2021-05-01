@@ -4885,9 +4885,10 @@ GameObject:
   - component: {fileID: 1179811671098850930}
   - component: {fileID: 1179811671098850934}
   - component: {fileID: 1179811671098850935}
+  - component: {fileID: 7795185137549903518}
   m_Layer: 0
   m_Name: Player Original
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4984,7 +4985,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 2
   m_CollisionDetection: 0
 --- !u!114 &1179811671098850935
 MonoBehaviour:
@@ -5000,10 +5001,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSpeed: 200
   jumpForce: 0
-  obstacles: []
-  obstacleDistance: 50
-  obstaclePosY: 12
-  numberOfObstacles: 0
+--- !u!114 &7795185137549903518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179811671098850929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2446cd3b1e4d8c408476fd2c9d5b64b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 0
 --- !u!1 &1179811671942881048
 GameObject:
   m_ObjectHideFlags: 0

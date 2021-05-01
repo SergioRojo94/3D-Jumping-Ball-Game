@@ -50,7 +50,7 @@ MonoBehaviour:
   - {fileID: 6087901203729802030, guid: e877c9ac539781a4cab5e6ac91d6c18b, type: 3}
   generatorTimer: 2
   obstacleDistance: 50
-  obstaclePosY: 0
+  obstaclePosY: 12
   speed: 200
 --- !u!54 &1356285766218072118
 Rigidbody:

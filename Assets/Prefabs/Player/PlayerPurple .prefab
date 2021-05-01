@@ -9697,9 +9697,10 @@ GameObject:
   - component: {fileID: 5394054866188287799}
   - component: {fileID: 5394054866188287795}
   - component: {fileID: 5394054866188287794}
+  - component: {fileID: 307485557876626466}
   m_Layer: 0
   m_Name: 'PlayerPurple '
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9713,7 +9714,7 @@ Transform:
   m_GameObject: {fileID: 5394054866188287796}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalScale: {x: 2.4, y: 2.4, z: 2.4}
   m_Children:
   - {fileID: 5394054866012839516}
   - {fileID: 5394054866128698348}
@@ -9796,7 +9797,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 2
   m_CollisionDetection: 0
 --- !u!114 &5394054866188287794
 MonoBehaviour:
@@ -9812,7 +9813,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSpeed: 200
   jumpForce: 0
-  obstacles: []
-  obstacleDistance: 50
-  obstaclePosY: 12
-  numberOfObstacles: 0
+--- !u!114 &307485557876626466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5394054866188287796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2446cd3b1e4d8c408476fd2c9d5b64b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 0
