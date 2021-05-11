@@ -281,7 +281,6 @@ Transform:
   - {fileID: 592727660165348732}
   - {fileID: 3098559576467250721}
   - {fileID: 201471924065728801}
-  - {fileID: 1267550406950640504}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -297,12 +296,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e16163d89acd3ed4da7440d4e4410633, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bubbles: 0
-  barrels: 0
-  towerBarrels: 0
+  bubbles: 1
+  barrels: 1
   _probablyBubbles: 0
   _probablyBarrels: 0
-  _probablyTowerBarrels: 0
 --- !u!1001 &5620233928672361541
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -365,72 +362,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5707416833120519524, guid: 0405528cc1c563d4280641a44dcb1fb9, type: 3}
   m_PrefabInstance: {fileID: 5620233928672361541}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &7627679223733211486
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 6087901203729802031}
-    m_Modifications:
-    - target: {fileID: 6613943803532430777, guid: 170fc5d262376f241ba3e9af3ec5c04a, type: 3}
-      propertyPath: m_Name
-      value: TowerBarrel
-      objectReference: {fileID: 0}
-    - target: {fileID: 6613943803532430777, guid: 170fc5d262376f241ba3e9af3ec5c04a, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8668808840873970214, guid: 170fc5d262376f241ba3e9af3ec5c04a, type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8668808840873970214, guid: 170fc5d262376f241ba3e9af3ec5c04a, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -8.256277
-      objectReference: {fileID: 0}
-    - target: {fileID: 8668808840873970214, guid: 170fc5d262376f241ba3e9af3ec5c04a, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 9.686817
-      objectReference: {fileID: 0}
-    - target: {fileID: 8668808840873970214, guid: 170fc5d262376f241ba3e9af3ec5c04a, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 7.81
-      objectReference: {fileID: 0}
-    - target: {fileID: 8668808840873970214, guid: 170fc5d262376f241ba3e9af3ec5c04a, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8668808840873970214, guid: 170fc5d262376f241ba3e9af3ec5c04a, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8668808840873970214, guid: 170fc5d262376f241ba3e9af3ec5c04a, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8668808840873970214, guid: 170fc5d262376f241ba3e9af3ec5c04a, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8668808840873970214, guid: 170fc5d262376f241ba3e9af3ec5c04a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8668808840873970214, guid: 170fc5d262376f241ba3e9af3ec5c04a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8668808840873970214, guid: 170fc5d262376f241ba3e9af3ec5c04a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 170fc5d262376f241ba3e9af3ec5c04a, type: 3}
---- !u!4 &1267550406950640504 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8668808840873970214, guid: 170fc5d262376f241ba3e9af3ec5c04a, type: 3}
-  m_PrefabInstance: {fileID: 7627679223733211486}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7949013182789188995
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -438,6 +369,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6087901203729802031}
     m_Modifications:
+    - target: {fileID: 3201822794501156468, guid: aff17fed4f3d8f94b93e2fd10e02fc6e, type: 3}
+      propertyPath: max
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3201822794501156468, guid: aff17fed4f3d8f94b93e2fd10e02fc6e, type: 3}
+      propertyPath: min
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3764771873929677137, guid: aff17fed4f3d8f94b93e2fd10e02fc6e, type: 3}
       propertyPath: m_Name
       value: Bubble

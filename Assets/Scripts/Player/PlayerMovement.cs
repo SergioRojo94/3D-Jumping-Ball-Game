@@ -77,6 +77,6 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     void RestartGame() {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

@@ -5,9 +5,10 @@ using UnityEngine;
 public class Bubble : MonoBehaviour
 {
     int _scale;
+    [SerializeField] int min, max;
     void Start()
     {
-        _scale = Random.Range(4, 10);
+        _scale = Random.Range(min, max);
         gameObject.transform.localScale = new Vector3(_scale, _scale, _scale);
     }
 
