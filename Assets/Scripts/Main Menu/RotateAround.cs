@@ -16,4 +16,15 @@ public class RotateAround : MonoBehaviour
     void Update() {
         transform.RotateAround(target.transform.position, Vector3.up, _degreesPerSecond * Time.deltaTime);
     }
+
+    //methods for arcade level:
+    void Increase() {
+        if (_degreesPerSecond < 8)
+            _degreesPerSecond += 1;
+        else
+            return;
+    }
+    public void IncreaseSpeed() {
+        InvokeRepeating("Increase", 0f, 45f);
+    }
 }

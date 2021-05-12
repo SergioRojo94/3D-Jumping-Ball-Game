@@ -11,6 +11,8 @@ public class PlayerPoints : MonoBehaviour
     }
     public void SumPoints(int p) {
         points += p;
+        if (points > PlayerPrefs.GetInt("Lv"+gm.levelIndex))
+            PlayerPrefs.SetInt("Lv" + gm.levelIndex, points);
         PlayerPrefs.SetInt("Points", points);
         gm.UpdateText();
     }

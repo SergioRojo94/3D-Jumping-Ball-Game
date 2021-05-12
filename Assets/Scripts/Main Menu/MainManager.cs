@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 //This script is used in MainMenu for pick randomly a skybox and a player
 public class MainManager : MonoBehaviour
@@ -14,7 +15,8 @@ public class MainManager : MonoBehaviour
         _randomSkyBox = Random.Range(0, SkyBoxMaterialsArray.Length);
 
         RenderSettings.skybox = SkyBoxMaterialsArray[_randomSkyBox]; //"" skybox
-        ActivePlayerRandomly();
+       if (SceneManager.GetActiveScene().name == "MainMenu")
+            ActivePlayerRandomly();
     }
 
     void ActivePlayerRandomly() {

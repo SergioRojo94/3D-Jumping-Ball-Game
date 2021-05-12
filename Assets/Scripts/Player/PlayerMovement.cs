@@ -79,4 +79,12 @@ public class PlayerMovement : MonoBehaviour {
     void RestartGame() {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+
+    //methods for arcade level:
+    void Increase(){
+        playerSpeed += 5;
+    }
+    public void IncreaseSpeed() {
+        InvokeRepeating("Increase", 0f, 10f);
+    }
 }

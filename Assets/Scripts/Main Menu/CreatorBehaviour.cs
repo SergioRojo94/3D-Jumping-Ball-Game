@@ -38,4 +38,14 @@ public class CreatorBehaviour : MonoBehaviour
     public void StartGenerator() {
         InvokeRepeating("CreateObstacle", 0f, generatorTimer);
     }
+
+    //methods for arcade level:
+    void Increase()
+    {
+        speed += 5;
+    }
+    public void IncreaseSpeed()
+    {
+        InvokeRepeating("Increase", 0f, 10f);
+    }
 }
