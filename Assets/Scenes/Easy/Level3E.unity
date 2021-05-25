@@ -663,6 +663,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1783279336543677361, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
+      propertyPath: goalPoints
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 1783279336543677372, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
       propertyPath: m_Name
       value: GameCanvas

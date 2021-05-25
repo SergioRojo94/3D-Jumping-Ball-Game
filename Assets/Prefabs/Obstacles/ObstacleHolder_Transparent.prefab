@@ -58,6 +58,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 1
+  obstacles:
+  - {fileID: 6087901203178844168}
+  - {fileID: 6087901203133940027}
+  materials:
+  - {fileID: 2100000, guid: e4d1f5b5c9367424e9cc7a8df8460123, type: 2}
+  - {fileID: 2100000, guid: e4d1f5b5c9367424e9cc7a8df8460123, type: 2}
 --- !u!1 &6087901203133940027
 GameObject:
   m_ObjectHideFlags: 0

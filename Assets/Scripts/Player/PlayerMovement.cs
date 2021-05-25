@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour {
     bool isGameOver = false;
 
     [SerializeField] float playerSpeed;
-    [SerializeField] float jumpForce;
+    public float jumpForce;
 
     void Start() {
         rb = GetComponent<Rigidbody>();
@@ -77,7 +77,13 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     void RestartGame() {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        //  SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        FindObjectOfType<GameManager>().levelCompleteCanvas.SetActive(true);
+        FindObjectOfType<GameManager>().retryButton.SetActive(true);
+        FindObjectOfType<GameManager>().nextLevelButton.SetActive(false);
+        FindObjectOfType<GameManager>().stars0.SetActive(true);
+        FindObjectOfType<GameManager>().levelCompleteText.SetActive(false);
+        FindObjectOfType<GameManager>().stars.SetActive(false);
     }
 
     //methods for arcade level:

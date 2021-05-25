@@ -153,6 +153,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 1
+  obstacles:
+  - {fileID: 6087901203178844168}
+  - {fileID: 3151209420786897546}
+  - {fileID: 6087901203133940027}
+  materials:
+  - {fileID: 2100000, guid: de4afcec9fbb60f43be3e3f149af0109, type: 2}
+  - {fileID: 2100000, guid: de4afcec9fbb60f43be3e3f149af0109, type: 2}
+  - {fileID: 2100000, guid: de4afcec9fbb60f43be3e3f149af0109, type: 2}
 --- !u!95 &7519337536886149495
 Animator:
   serializedVersion: 3
@@ -474,6 +482,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 1
+  obstacles:
+  - {fileID: 6087901203178844168}
+  - {fileID: 3151209420786897546}
+  - {fileID: 6087901203133940027}
+  materials:
+  - {fileID: 2100000, guid: 316fdbfeb855a2b4d97fe2f1484ad0f0, type: 2}
+  - {fileID: 2100000, guid: 316fdbfeb855a2b4d97fe2f1484ad0f0, type: 2}
+  - {fileID: 2100000, guid: 316fdbfeb855a2b4d97fe2f1484ad0f0, type: 2}
 --- !u!1001 &747705699474485240
 PrefabInstance:
   m_ObjectHideFlags: 0

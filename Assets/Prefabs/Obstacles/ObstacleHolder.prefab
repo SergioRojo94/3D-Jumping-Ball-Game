@@ -45,6 +45,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 1
+  obstacles:
+  - {fileID: 6087901203178844168}
+  - {fileID: 6087901203133940027}
+  materials:
+  - {fileID: 2100000, guid: 3530c2560cffcca46ab842e914f8becc, type: 2}
+  - {fileID: 2100000, guid: 3530c2560cffcca46ab842e914f8becc, type: 2}
 --- !u!65 &1822491934201236298
 BoxCollider:
   m_ObjectHideFlags: 0

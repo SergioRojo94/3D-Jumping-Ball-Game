@@ -153,6 +153,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 1
+  obstacles:
+  - {fileID: 6087901203178844168}
+  - {fileID: 3151209420786897546}
+  - {fileID: 6087901203133940027}
+  materials:
+  - {fileID: 2100000, guid: 2e3a2cb04ab976e43ac493e6efda5af9, type: 2}
+  - {fileID: 2100000, guid: 2e3a2cb04ab976e43ac493e6efda5af9, type: 2}
+  - {fileID: 2100000, guid: 2e3a2cb04ab976e43ac493e6efda5af9, type: 2}
 --- !u!1 &6087901203133940027
 GameObject:
   m_ObjectHideFlags: 0
@@ -436,3 +444,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 1
+  obstacles:
+  - {fileID: 6087901203178844168}
+  - {fileID: 3151209420786897546}
+  - {fileID: 6087901203133940027}
+  materials:
+  - {fileID: 2100000, guid: abcb23a7168373a44a874b63ac9ff68b, type: 2}
+  - {fileID: 2100000, guid: abcb23a7168373a44a874b63ac9ff68b, type: 2}
+  - {fileID: 2100000, guid: abcb23a7168373a44a874b63ac9ff68b, type: 2}

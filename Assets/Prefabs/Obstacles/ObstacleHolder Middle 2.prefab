@@ -1,24 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!95 &1155423130876492170
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4494392651340310185}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: bcf5fbcd1e539044f8a12749aefa4faf, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3151209420786897546
 GameObject:
   m_ObjectHideFlags: 0
@@ -172,6 +153,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 1
+  obstacles:
+  - {fileID: 6087901203178844168}
+  - {fileID: 3151209420786897546}
+  - {fileID: 6087901203133940027}
+  materials:
+  - {fileID: 2100000, guid: abcb23a7168373a44a874b63ac9ff68b, type: 2}
+  - {fileID: 2100000, guid: abcb23a7168373a44a874b63ac9ff68b, type: 2}
+  - {fileID: 2100000, guid: abcb23a7168373a44a874b63ac9ff68b, type: 2}
+--- !u!95 &1155423130876492170
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4494392651340310185}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bcf5fbcd1e539044f8a12749aefa4faf, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6087901203133940027
 GameObject:
   m_ObjectHideFlags: 0
@@ -474,6 +482,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 1
+  obstacles:
+  - {fileID: 4173005647137402794}
+  - {fileID: 3151209420786897546}
+  - {fileID: 8018655497004114300}
+  materials:
+  - {fileID: 2100000, guid: 90f634e8c38a5cd49961fd319dc379ae, type: 2}
+  - {fileID: 2100000, guid: 90f634e8c38a5cd49961fd319dc379ae, type: 2}
+  - {fileID: 2100000, guid: 90f634e8c38a5cd49961fd319dc379ae, type: 2}
 --- !u!1001 &747705699474485240
 PrefabInstance:
   m_ObjectHideFlags: 0
