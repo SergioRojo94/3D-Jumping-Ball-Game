@@ -81,7 +81,6 @@ public class PlayerMovement : MonoBehaviour {
         FindObjectOfType<GameManager>().levelCompleteCanvas.SetActive(true);
         FindObjectOfType<GameManager>().retryButton.SetActive(true);
         FindObjectOfType<GameManager>().nextLevelButton.SetActive(false);
-        FindObjectOfType<GameManager>().stars0.SetActive(true);
         FindObjectOfType<GameManager>().levelCompleteText.SetActive(false);
         FindObjectOfType<GameManager>().stars.SetActive(false);
     }

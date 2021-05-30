@@ -5,9 +5,12 @@ using UnityEngine.UI;
 public class LevelProgressUI : MonoBehaviour
 {
     [Header("UI references :")]
-    [SerializeField] private Image uiFillImage;
-    [SerializeField] private Text uiStartText;
-    [SerializeField] private Text uiEndText;
+    /* [SerializeField] private Image uiFillImage;
+     [SerializeField] private Text uiStartText;
+     [SerializeField] private Text uiEndText;*/
+    [SerializeField] private Image bronzeImage;
+    [SerializeField] private Image silverImage;
+    [SerializeField] private Image goldImage;
 
     [Header("Player & Total points references :")]
     int playerPoints;
@@ -31,11 +34,11 @@ public class LevelProgressUI : MonoBehaviour
     }
 
 
-    public void SetLevelTexts(int level)
+   /* public void SetLevelTexts(int level)
     {
         uiStartText.text = level.ToString();
         uiEndText.text = (level + 1).ToString();
-    }
+    }*/
 
 
    /* private float GetDistance()
@@ -48,10 +51,10 @@ public class LevelProgressUI : MonoBehaviour
     }*/
 
 
-    private void UpdateProgressFill(float value)
+    /*private void UpdateProgressFill(float value)
     {
         uiFillImage.fillAmount = value;
-    }
+    }*/
 
 
     private void Update() {
@@ -63,19 +66,16 @@ public class LevelProgressUI : MonoBehaviour
         // check if the player doesn't pass the End Line
         if (playerPoints <= totalPoints)
         {
-            float progressValue;
-
             // float newDistance = GetDistance();
             //float progressValue = Mathf.InverseLerp( 0f, playerPoints, totalPoints);
             if (playerPoints < _gm.star1Points)
-                progressValue = 0f;
+                return;
             else if (playerPoints >= _gm.star1Points && playerPoints < _gm.star2Points)
-                progressValue = 0.33f;
+                bronzeImage.gameObject.SetActive(true);
             else if (playerPoints >= _gm.star2Points && playerPoints < _gm.goalPoints)
-                progressValue = 0.66f;
+                silverImage.gameObject.SetActive(true);
             else
-                progressValue = 1;
-            UpdateProgressFill(progressValue);
+                goldImage.gameObject.SetActive(true);
         }
     }
     }

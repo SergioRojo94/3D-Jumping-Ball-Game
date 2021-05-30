@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject levelCompleteCanvas;
     public GameObject retryButton, nextLevelButton;
-    public GameObject stars0, levelCompleteText,stars;
+    public GameObject levelCompleteText,stars;
     [SerializeField] Text finalPoints;
     [SerializeField] Text coinsAmount;
     #endregion
@@ -100,12 +100,21 @@ public class GameManager : MonoBehaviour
     }
 
     private int SetStars() { //transform stars obtained in silver coins for the player
-        if (pointsText.text == goalPoints.ToString())
+        if (pointsText.text == goalPoints.ToString()) {
+            FindObjectOfType<SingleLevel>().PressStarsButton(3);
             return 3;
-        else if (star2.activeInHierarchy)
+        }
+            
+        else if (star2.activeInHierarchy) {
+            FindObjectOfType<SingleLevel>().PressStarsButton(2);
             return 2;
-        else if (star1.activeInHierarchy)
+        }
+            
+        else if (star1.activeInHierarchy) {
+            FindObjectOfType<SingleLevel>().PressStarsButton(1);
             return 1;
+        }
+            
         else
             return 0;
     }
