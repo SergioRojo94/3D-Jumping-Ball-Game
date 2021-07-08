@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 48d4f62e2d5af1643a431d2f4b07ccbb, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: e9705e00f62f62849b89fc9fd55aa0e3, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.45138186, g: 0.5004388, b: 0.56997365, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -428,6 +428,18 @@ PrefabInstance:
     - target: {fileID: 1783279336543677360, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783279336543677361, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
+      propertyPath: song
+      value: Across The Sky
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783279336543677361, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
+      propertyPath: star1Points
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783279336543677361, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
+      propertyPath: star2Points
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 1783279336543677372, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
       propertyPath: m_Name

@@ -483,9 +483,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   points: 1
   obstacles:
-  - {fileID: 4173005647137402794}
+  - {fileID: 6087901203178844168}
   - {fileID: 3151209420786897546}
-  - {fileID: 8018655497004114300}
+  - {fileID: 6087901203133940027}
   materials:
   - {fileID: 2100000, guid: 90f634e8c38a5cd49961fd319dc379ae, type: 2}
   - {fileID: 2100000, guid: 90f634e8c38a5cd49961fd319dc379ae, type: 2}

@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 8dd2f17b6e3f8174390967bc55ead836, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: d07d2172e76d3fa429e80a14d2ae3616, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -693,8 +693,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1783279336543677361, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
+      propertyPath: song
+      value: Constellation
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783279336543677361, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
       propertyPath: goalPoints
       value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783279336543677361, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
+      propertyPath: star1Points
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783279336543677361, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
+      propertyPath: star2Points
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1783279336543677361, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
       propertyPath: _pWaterfalls
@@ -703,6 +715,10 @@ PrefabInstance:
     - target: {fileID: 1783279336543677372, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
       propertyPath: m_Name
       value: 'GameCanvas '
+      objectReference: {fileID: 0}
+    - target: {fileID: 6214892065950412041, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
+      propertyPath: levelIndex
+      value: 102
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}

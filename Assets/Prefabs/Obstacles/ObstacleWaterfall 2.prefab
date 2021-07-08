@@ -310,6 +310,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6087901203178844169}
     m_Modifications:
+    - target: {fileID: 147129506083187506, guid: 5aadcc85dfa9c374d837ee06cbaff457, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 147129506083187506, guid: 5aadcc85dfa9c374d837ee06cbaff457, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 147129506083187506, guid: 5aadcc85dfa9c374d837ee06cbaff457, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.25
+      objectReference: {fileID: 0}
     - target: {fileID: 2673089745107699656, guid: 5aadcc85dfa9c374d837ee06cbaff457, type: 3}
       propertyPath: lengthInSec
       value: 37.85
@@ -409,6 +421,10 @@ PrefabInstance:
     - target: {fileID: 3249292370200791972, guid: 5aadcc85dfa9c374d837ee06cbaff457, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3421335579000291175, guid: 5aadcc85dfa9c374d837ee06cbaff457, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4614231487588278546, guid: 5aadcc85dfa9c374d837ee06cbaff457, type: 3}
       propertyPath: m_MaxParticleSize

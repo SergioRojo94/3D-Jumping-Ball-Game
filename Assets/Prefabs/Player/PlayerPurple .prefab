@@ -9714,7 +9714,7 @@ Transform:
   m_GameObject: {fileID: 5394054866188287796}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.4, y: 2.4, z: 2.4}
+  m_LocalScale: {x: 2.44, y: 2.44, z: 2.44}
   m_Children:
   - {fileID: 5394054866012839516}
   - {fileID: 5394054866128698348}
@@ -9813,6 +9813,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSpeed: 200
   jumpForce: 0
+  unlocked: 0
+  playerName: Purple
 --- !u!114 &307485557876626466
 MonoBehaviour:
   m_ObjectHideFlags: 0

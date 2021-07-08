@@ -215,12 +215,28 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1783279336543677361, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
+      propertyPath: song
+      value: Across The Sky
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783279336543677361, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
       propertyPath: goalPoints
       value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783279336543677361, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
+      propertyPath: star1Points
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783279336543677361, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
+      propertyPath: star2Points
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 1783279336543677372, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
       propertyPath: m_Name
       value: GameCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6214892065950412041, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
+      propertyPath: levelIndex
+      value: 104
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
@@ -524,7 +540,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1356285766218072119, guid: f1d6e9f767c1caf4ab1479f6f4ed7071, type: 3}
       propertyPath: obstacles.Array.size
-      value: 5
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1356285766218072119, guid: f1d6e9f767c1caf4ab1479f6f4ed7071, type: 3}
       propertyPath: obstacles.Array.data[0]
@@ -545,15 +561,15 @@ PrefabInstance:
     - target: {fileID: 1356285766218072119, guid: f1d6e9f767c1caf4ab1479f6f4ed7071, type: 3}
       propertyPath: obstacles.Array.data[5]
       value: 
-      objectReference: {fileID: 6087901203729802030, guid: e01a655a787444147a6379ed985d2c83, type: 3}
+      objectReference: {fileID: 6087901203729802030, guid: fbeed939fcd4f974aac97b38885edb4c, type: 3}
     - target: {fileID: 1356285766218072119, guid: f1d6e9f767c1caf4ab1479f6f4ed7071, type: 3}
       propertyPath: obstacles.Array.data[6]
       value: 
-      objectReference: {fileID: 6087901203729802030, guid: c34c87e8bfbfcb449be2e1e38902f86b, type: 3}
+      objectReference: {fileID: 6087901203729802030, guid: 5b107333786de89439eb5fd1d02473ec, type: 3}
     - target: {fileID: 1356285766218072119, guid: f1d6e9f767c1caf4ab1479f6f4ed7071, type: 3}
       propertyPath: obstacles.Array.data[7]
       value: 
-      objectReference: {fileID: 6087901203729802030, guid: a6ac8feb1e49aa949822362fe42d95b6, type: 3}
+      objectReference: {fileID: 6087901203729802030, guid: 77b9fb9fce292a047abbe9c57137cd73, type: 3}
     - target: {fileID: 1356285766218072119, guid: f1d6e9f767c1caf4ab1479f6f4ed7071, type: 3}
       propertyPath: obstacles.Array.data[8]
       value: 

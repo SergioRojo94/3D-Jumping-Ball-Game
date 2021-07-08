@@ -1,0 +1,146 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5598440153134991443
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5598440153134991445}
+  - component: {fileID: 5598440153134991444}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5598440153134991445
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5598440153134991443}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1515.368, y: 684.52356, z: -597.48553}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5598440153134991444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5598440153134991443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b6509a6a26e31d47ac9175337ad46a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: A Pure Embrace
+    clip: {fileID: 8300000, guid: 3502c618fa14026468cd6b0691d9320d, type: 3}
+    volume: 0.8
+    pitch: 1
+    originalVolume: 0.8
+    loop: 1
+    source: {fileID: 0}
+  - name: Across The Sky
+    clip: {fileID: 8300000, guid: 17a8ac983aff8db48966cf2b01eb6d96, type: 3}
+    volume: 0.8
+    pitch: 1
+    originalVolume: 0.8
+    loop: 1
+    source: {fileID: 0}
+  - name: Ascension
+    clip: {fileID: 8300000, guid: e7e29761e2987d54e92f0b23f299faaa, type: 3}
+    volume: 0.8
+    pitch: 1
+    originalVolume: 0.8
+    loop: 1
+    source: {fileID: 0}
+  - name: Constellation
+    clip: {fileID: 8300000, guid: 30ca9d6d8afc34146b24c19c5031fd06, type: 3}
+    volume: 0.8
+    pitch: 1
+    originalVolume: 0.8
+    loop: 1
+    source: {fileID: 0}
+  - name: Metatron
+    clip: {fileID: 8300000, guid: cd45a655766cee34ebc791d2d7ab0288, type: 3}
+    volume: 0.8
+    pitch: 1
+    originalVolume: 0.8
+    loop: 1
+    source: {fileID: 0}
+  - name: ButtonClick
+    clip: {fileID: 8300000, guid: 29bde6326b4c34ad8a12da475f79b50a, type: 3}
+    volume: 0.7
+    pitch: 1
+    originalVolume: 0.7
+    loop: 0
+    source: {fileID: 0}
+  - name: Death
+    clip: {fileID: 8300000, guid: 5fdb13d3756c84fecac96f5a2d124370, type: 3}
+    volume: 1
+    pitch: 1
+    originalVolume: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: GetPoint
+    clip: {fileID: 8300000, guid: 657578e4be6b64dbf9b09deada272e55, type: 3}
+    volume: 0.8
+    pitch: 1
+    originalVolume: 0.8
+    loop: 0
+    source: {fileID: 0}
+  - name: GolpeGrave
+    clip: {fileID: 8300000, guid: b99da9a57308d4ba1bee1cf1d9038376, type: 3}
+    volume: 1
+    pitch: 1
+    originalVolume: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Barrels Pyramid
+    clip: {fileID: 8300000, guid: 44bd9b2259ff3a14980ee36bc55e14de, type: 3}
+    volume: 1
+    pitch: 1
+    originalVolume: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Wood
+    clip: {fileID: 8300000, guid: d8d04c6f80a1140db85ede568dab1f51, type: 3}
+    volume: 0.8
+    pitch: 0.7
+    originalVolume: 0.8
+    loop: 0
+    source: {fileID: 0}
+  - name: Bubble Explosion
+    clip: {fileID: 8300000, guid: 8266d97704d357646a32667a4bab7fec, type: 3}
+    volume: 1
+    pitch: 1
+    originalVolume: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Waterfall Sound
+    clip: {fileID: 8300000, guid: c41bba182b0449748adabdd75cda5f87, type: 3}
+    volume: 0.9
+    pitch: 1
+    originalVolume: 0.9
+    loop: 0
+    source: {fileID: 0}
+  - name: Arcade Song
+    clip: {fileID: 8300000, guid: ea67026a2bed1b04085f0d921bb94997, type: 3}
+    volume: 0.8
+    pitch: 1
+    originalVolume: 0.8
+    loop: 1
+    source: {fileID: 0}
+  songName: 
+  musicIsActive: 1

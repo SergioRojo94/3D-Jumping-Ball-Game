@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 4243553795681827071}
   - component: {fileID: 375403478390934161}
   - component: {fileID: 8065851447848601650}
+  - component: {fileID: 4551074416811507094}
+  - component: {fileID: 5403419930200652570}
   m_Layer: 0
   m_Name: 'WoodBarrel '
   m_TagString: Untagged
@@ -129,3 +131,29 @@ CapsuleCollider:
   m_Height: 0.62295747
   m_Direction: 1
   m_Center: {x: 0, y: 0.3114276, z: 0.013901889}
+--- !u!135 &4551074416811507094
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8750362710994925431}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.30000007
+  m_Center: {x: 0, y: 0.29994893, z: 0}
+--- !u!114 &5403419930200652570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8750362710994925431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b2317672bf0de7408ed03cbd6a02fbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  song: Wood

@@ -7,16 +7,18 @@ public class MainManager : MonoBehaviour
     [SerializeField] Material[] SkyBoxMaterialsArray;
     [SerializeField] ParticleSystem.MainModule _particleSystem;
 
-    GameObject[] PlayerArray;
+    [SerializeField]GameObject[] PlayerArray;
     int _random, _randomSkyBox;
     void Start() {
-        PlayerArray = new GameObject[transform.childCount];
+       // PlayerArray = new GameObject[transform.childCount];
         _random = Random.Range(0, PlayerArray.Length);
         _randomSkyBox = Random.Range(0, SkyBoxMaterialsArray.Length);
 
         RenderSettings.skybox = SkyBoxMaterialsArray[_randomSkyBox]; //"" skybox
-       if (SceneManager.GetActiveScene().name == "MainMenu")
+        if (SceneManager.GetActiveScene().name == "MainMenu")
             ActivePlayerRandomly();
+        else
+            LoadCharacter();
     }
 
     void ActivePlayerRandomly() {
@@ -26,5 +28,16 @@ public class MainManager : MonoBehaviour
         foreach (GameObject objX in PlayerArray)
             objX.SetActive(false);
         PlayerArray[_random].SetActive(true);
+    }
+
+    void LoadCharacter() {
+        int selectedCharacter = PlayerPrefs.GetInt("selectedCharacter");
+        Debug.Log(selectedCharacter);
+        foreach (GameObject objX in PlayerArray)
+            objX.SetActive(false);
+
+        if (PlayerArray[selectedCharacter])
+            PlayerArray[selectedCharacter].SetActive(true);
+        
     }
 }

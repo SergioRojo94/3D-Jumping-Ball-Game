@@ -5001,6 +5001,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSpeed: 200
   jumpForce: 0
+  unlocked: 1
+  playerName: Original
 --- !u!114 &7795185137549903518
 MonoBehaviour:
   m_ObjectHideFlags: 0

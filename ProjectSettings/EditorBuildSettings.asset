@@ -9,6 +9,21 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: cca0fccf79bd95346bc1e84710d1bca3
   - enabled: 1
+    path: Assets/Scenes/LevelSelection/EasyLevelSelection.unity
+    guid: 95ab479850013e04bbe5b5d0c32842a4
+  - enabled: 1
+    path: Assets/Scenes/LevelSelection/HardLevelSelection.unity
+    guid: 27bf628fc8c2d0a4f8c442fddd7fed28
+  - enabled: 1
+    path: Assets/Scenes/LevelSelection/MediumLevelSelection.unity
+    guid: 61e08698fb1b7e34f83596b76f3d3941
+  - enabled: 1
+    path: Assets/Scenes/ArcadeScene.unity
+    guid: 235f28dfffe045741858aa3af053cda9
+  - enabled: 1
+    path: Assets/Scenes/Shop.unity
+    guid: cb100e6156a359349a12dfecd5cb85ae
+  - enabled: 1
     path: Assets/Scenes/Easy/Level1E.unity
     guid: 42cf212270643a6468ca551092cc654a
   - enabled: 1

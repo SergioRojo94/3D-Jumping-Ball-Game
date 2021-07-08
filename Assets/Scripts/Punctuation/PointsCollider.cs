@@ -17,6 +17,7 @@ public class PointsCollider : MonoBehaviour
     void OnTriggerEnter(Collider other) {
         if (other.CompareTag("Player")) {
             _playerP.SumPoints(points);
+            AudioManager.instance.Play("GetPoint");
         }
         ChangeColorObstacles();
     }

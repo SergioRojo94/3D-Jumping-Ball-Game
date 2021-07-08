@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 8dd2f17b6e3f8174390967bc55ead836, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 7416536dbe0334cfd888dd1beb75a9fb, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -215,12 +215,28 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1783279336543677361, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
+      propertyPath: song
+      value: Ascension
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783279336543677361, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
       propertyPath: goalPoints
       value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783279336543677361, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
+      propertyPath: star1Points
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783279336543677361, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
+      propertyPath: star2Points
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1783279336543677372, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
       propertyPath: m_Name
       value: GameCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6214892065950412041, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
+      propertyPath: levelIndex
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
@@ -533,7 +549,11 @@ PrefabInstance:
     - target: {fileID: 1356285766218072119, guid: f1d6e9f767c1caf4ab1479f6f4ed7071, type: 3}
       propertyPath: obstacles.Array.data[0]
       value: 
-      objectReference: {fileID: 6087901203729802030, guid: c34c87e8bfbfcb449be2e1e38902f86b, type: 3}
+      objectReference: {fileID: 6087901203729802030, guid: fbeed939fcd4f974aac97b38885edb4c, type: 3}
+    - target: {fileID: 1356285766218072119, guid: f1d6e9f767c1caf4ab1479f6f4ed7071, type: 3}
+      propertyPath: obstacles.Array.data[1]
+      value: 
+      objectReference: {fileID: 6087901203729802030, guid: 8933c57270f7bcc4e85f2a0035394734, type: 3}
     - target: {fileID: 1356285766218072119, guid: f1d6e9f767c1caf4ab1479f6f4ed7071, type: 3}
       propertyPath: obstacles.Array.data[2]
       value: 
@@ -549,7 +569,7 @@ PrefabInstance:
     - target: {fileID: 1356285766218072119, guid: f1d6e9f767c1caf4ab1479f6f4ed7071, type: 3}
       propertyPath: obstacles.Array.data[5]
       value: 
-      objectReference: {fileID: 6087901203729802030, guid: d35ad3a9b62c6b5478b0112475d05f26, type: 3}
+      objectReference: {fileID: 6087901203729802030, guid: 77b9fb9fce292a047abbe9c57137cd73, type: 3}
     - target: {fileID: 1356285766218072119, guid: f1d6e9f767c1caf4ab1479f6f4ed7071, type: 3}
       propertyPath: obstacles.Array.data[6]
       value: 
@@ -557,11 +577,11 @@ PrefabInstance:
     - target: {fileID: 1356285766218072119, guid: f1d6e9f767c1caf4ab1479f6f4ed7071, type: 3}
       propertyPath: obstacles.Array.data[7]
       value: 
-      objectReference: {fileID: 6087901203729802030, guid: e877c9ac539781a4cab5e6ac91d6c18b, type: 3}
+      objectReference: {fileID: 6087901203729802030, guid: 8ba6cb0a1811b8e4891e7788bb893a40, type: 3}
     - target: {fileID: 1356285766218072119, guid: f1d6e9f767c1caf4ab1479f6f4ed7071, type: 3}
       propertyPath: obstacles.Array.data[8]
       value: 
-      objectReference: {fileID: 6087901203729802030, guid: e01a655a787444147a6379ed985d2c83, type: 3}
+      objectReference: {fileID: 6087901203729802030, guid: dc87bf315eb5eab4e9c0e5e89435bfc2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1d6e9f767c1caf4ab1479f6f4ed7071, type: 3}
 --- !u!1001 &1398770252

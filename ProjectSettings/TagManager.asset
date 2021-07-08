@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Obstacle
   - Water
+  - enemy
+  - StartButton
   layers:
   - Default
   - TransparentFX

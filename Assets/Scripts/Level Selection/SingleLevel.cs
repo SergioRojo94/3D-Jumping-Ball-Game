@@ -27,7 +27,7 @@ public class SingleLevel : MonoBehaviour
         //CORE PLayerPrefs.getInt("KEY", "VALUE"); We can use the KEY to find Our VALUE
        // Debug.Log(PlayerPrefs.GetInt("Lv" + levelIndex, _starsNum));
 
-        BackButton();
+      //  BackButton();
     }
 
 }

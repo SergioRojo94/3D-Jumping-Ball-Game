@@ -4902,7 +4902,7 @@ Transform:
   m_GameObject: {fileID: 3430898659948100262}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.45, y: 8.47, z: 15}
-  m_LocalScale: {x: 2.4, y: 2.4, z: 2.4}
+  m_LocalScale: {x: 2.44, y: 2.44, z: 2.44}
   m_Children:
   - {fileID: 3430898660561837006}
   - {fileID: 3430898659873406590}
@@ -5001,6 +5001,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSpeed: 300
   jumpForce: 45
+  unlocked: 0
+  playerName: Green
 --- !u!114 &2637221254475260983
 MonoBehaviour:
   m_ObjectHideFlags: 0

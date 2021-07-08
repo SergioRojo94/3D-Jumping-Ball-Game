@@ -72,10 +72,15 @@ public class LevelProgressUI : MonoBehaviour
                 return;
             else if (playerPoints >= _gm.star1Points && playerPoints < _gm.star2Points)
                 bronzeImage.gameObject.SetActive(true);
-            else if (playerPoints >= _gm.star2Points && playerPoints < _gm.goalPoints)
+            else if (playerPoints >= _gm.star2Points && playerPoints < _gm.goalPoints) {
+                bronzeImage.gameObject.SetActive(false);
                 silverImage.gameObject.SetActive(true);
-            else
+            }
+
+            else {
+                silverImage.gameObject.SetActive(false);
                 goldImage.gameObject.SetActive(true);
+            }
         }
     }
     }

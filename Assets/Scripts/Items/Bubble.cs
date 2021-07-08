@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿
 using UnityEngine;
 
 public class Bubble : MonoBehaviour
@@ -14,6 +13,7 @@ public class Bubble : MonoBehaviour
 
     void OnTriggerEnter(Collider col) {
         if (col.gameObject.CompareTag("Player")) {
+            AudioManager.instance.Play("Bubble Explosion");
             GetComponent<MeshRenderer>().enabled = false;
             GetComponent<Collider>().enabled = false;
             GetComponent<Light>().enabled = false;
