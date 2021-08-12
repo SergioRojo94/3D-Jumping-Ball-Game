@@ -36,8 +36,12 @@ public class Shop : MonoBehaviour
             if (PlayerPrefs.GetInt(ShopItemsList[i].Name) == 1)
                 buyBtn.gameObject.SetActive(false);
             buyBtn.AddEventListener(i, OnShopItemBtnClicked);
-            if (ShopItemsList[i].Name == "Eye" || (ShopItemsList[i].Name == "Billiard")) {
+            if (ShopItemsList[i].Name == "Eye" ) {
                 g.transform.GetChild(1).rotation = new Quaternion(0, 400f, 0, 0);
+            }
+            if (ShopItemsList[i].Name == "Billiard 8")
+            {
+                g.transform.GetChild(1).rotation = new Quaternion(27.37f, 180f, 0, 0);
             }
 
         }

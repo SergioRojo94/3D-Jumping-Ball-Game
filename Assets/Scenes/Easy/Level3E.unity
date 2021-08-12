@@ -497,7 +497,7 @@ PrefabInstance:
     - target: {fileID: 1107487109336205086, guid: e613d7bb71f33b147b01ec7b2de5931b, type: 3}
       propertyPath: SkyBoxMaterialsArray.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 7a8675eb396637d43b4ba0a69cc715a5, type: 2}
+      objectReference: {fileID: 2100000, guid: ab675e6698bde46fd87143fb0d7580cb, type: 2}
     - target: {fileID: 2360895073554739202, guid: e613d7bb71f33b147b01ec7b2de5931b, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -668,8 +668,16 @@ PrefabInstance:
       value: Ascension
       objectReference: {fileID: 0}
     - target: {fileID: 1783279336543677361, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
+      propertyPath: _pBarrels
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783279336543677361, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
       propertyPath: goalPoints
       value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783279336543677361, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
+      propertyPath: levelIndex
+      value: 3E
       objectReference: {fileID: 0}
     - target: {fileID: 1783279336543677361, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
       propertyPath: star1Points

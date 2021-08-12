@@ -33,9 +33,9 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     void Update() {
-        if (Input.GetKeyUp(KeyCode.Space) && _canJump == true)
+      if (Input.GetKeyUp(KeyCode.Space) && _canJump == true)
             jump = true;
-        /*  if (Input.touchCount > 0)
+          if (Input.touchCount > 0)
                {
                    Touch touch = Input.GetTouch(0);
                    switch (touch.phase)
@@ -46,7 +46,7 @@ public class PlayerMovement : MonoBehaviour {
                            jump = true;
                            break;
                    }
-               }*/
+               }
         //}
 
         if (!isGameOver)
@@ -56,6 +56,9 @@ public class PlayerMovement : MonoBehaviour {
             {
                 if (SceneManager.GetActiveScene().name != "MainMenu")
                 {
+                    if (SceneManager.GetActiveScene().name != "ArcadeLevelSelection")
+                    {
+                    
                     if (hasDeadBefore == false)
                     {
                         rb.useGravity = false;
@@ -78,13 +81,15 @@ public class PlayerMovement : MonoBehaviour {
                         _canJump = false;
                         Invoke("RestartGame", .3f);
                     }
+
+                    }
                 }
             }
            
         }
         if (transform.position.y < -70)
         {
-            if (SceneManager.GetActiveScene().name != "MainMenu")
+            if (SceneManager.GetActiveScene().name != "MainMenu" && SceneManager.GetActiveScene().name != "ArcadeLevelSelection")
                 Invoke("RestartGame", .3f);
         }
     }
@@ -166,8 +171,9 @@ public class PlayerMovement : MonoBehaviour {
     //methods for arcade level:
     void Increase(){
         playerSpeed += 5;
+        Debug.Log("Velocidad:" + playerName);
     }
     public void IncreaseSpeed() {
-        InvokeRepeating("Increase", 0f, 10f);
+        InvokeRepeating("Increase", 0f, 30f);
     }
 }

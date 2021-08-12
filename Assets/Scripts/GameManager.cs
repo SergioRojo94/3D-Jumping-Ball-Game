@@ -3,10 +3,12 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using Yodo1.MAS;
 
 public class GameManager : MonoBehaviour
 {
     public string song, difficulty;
+    public bool banner;
     public Text pointsText;
     [SerializeField] Text recordPoints;
 
@@ -42,6 +44,7 @@ public class GameManager : MonoBehaviour
     bool _PPWaterfalls;
     bool _PPBlueFire;
     bool _PPVioletFire;
+    bool _PPFluid;
     #endregion
 
     #region probability of item appears (in editor)
@@ -51,18 +54,60 @@ public class GameManager : MonoBehaviour
     public int _pWaterfalls;
     public int _pBlueFire;
     public int _pVioletFire;
+    public int _pFluid;
     #endregion
 
     void Start(){
         _player = FindObjectOfType<PlayerMovement>();
-        Debug.Log(_player.playerName);
         _creator = FindObjectOfType<CreatorBehaviour>();
         _destructor = FindObjectOfType<ObstacleBehaviour>();
         Time.timeScale = 1f;
         AudioManager.instance.Play(song);
         recordPoints.text = PlayerPrefs.GetInt("Lv" + levelIndex).ToString(); //get playerpref and show the record of the current level
         if (SceneManager.GetActiveScene().name == "ArcadeScene") {
-            SpeedUp();
+            IncreaseSpeedArcade();
+        }
+
+        //for banner
+        if (banner == true) {
+            Yodo1U3dMas.SetBannerAdDelegate((Yodo1U3dAdEvent adEvent, Yodo1U3dAdError error) => {
+                Debug.Log("[Yodo1 Mas] BannerdDelegate:" + adEvent.ToString() + "\n" + error.ToString());
+                switch (adEvent)
+                {
+                    case Yodo1U3dAdEvent.AdClosed:
+                        Debug.Log("[Yodo1 Mas] Banner ad has been closed.");
+                        break;
+                    case Yodo1U3dAdEvent.AdOpened:
+                        Debug.Log("[Yodo1 Mas] Banner ad has been shown.");
+                        break;
+                    case Yodo1U3dAdEvent.AdError:
+                        Debug.Log("[Yodo1 Mas] Banner ad error, " + error.ToString());
+                        break;
+                }
+            });
+            int align = Yodo1U3dBannerAlign.BannerTop | Yodo1U3dBannerAlign.BannerHorizontalCenter;
+            int offsetX = 10;
+            int offsetY = 10;
+            Yodo1U3dMas.ShowBannerAd(align, offsetX, offsetY);
+        }
+    }
+
+    public void IncreaseSpeedArcade()
+    {
+        InvokeRepeating("SpeedUp", 0f, 25f);
+    }
+
+    public void CheckArcadeRewards() {
+        if (SceneManager.GetActiveScene().name == "ArcadeScene")
+        {
+            if (pointsText.text == "25")
+                PlayerPrefs.SetInt("Volleyball", 1);
+            if (pointsText.text == "40")
+                PlayerPrefs.SetInt("Beachball", 1);
+            if (pointsText.text == "65")
+                PlayerPrefs.SetInt("Big SpikeBall", 1);
+            if (pointsText.text == "100")
+                PlayerPrefs.SetInt("Billiard 8", 1);
         }
     }
     public void UpdateText() {
@@ -70,11 +115,17 @@ public class GameManager : MonoBehaviour
         if (SceneManager.GetActiveScene().name != "ArcadeScene") { //arcade is infinite
             UpdateStars();
             if (int.Parse(pointsText.text) == goalPoints) {
-               
                 // StartCoroutine("LevelComplete");
                 LevelComplete();
             }
-                
+        }
+        else {
+            int points = int.Parse(pointsText.text);
+            if (points % 15 == 0) {
+                int pointspref = PlayerPrefs.GetInt("Points");
+                pointspref += 1;
+                PlayerPrefs.SetInt("Points", pointspref);
+            }          
         }
     }
 
@@ -82,6 +133,9 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     void SpeedUp() {
+        _player = FindObjectOfType<PlayerMovement>();
+        _creator = FindObjectOfType<CreatorBehaviour>();
+        _destructor = FindObjectOfType<ObstacleBehaviour>();
         _player.IncreaseSpeed();
         _creator.IncreaseSpeed();
         _destructor.IncreaseSpeed();
@@ -98,20 +152,6 @@ public class GameManager : MonoBehaviour
        //nothing 'bout 3 star because when player reches 3rd star, the game ends and victory gui appears
     }
 
-    /* IEnumerator LevelComplete(){
-         PlayerPrefs.SetInt("Lv" + levelIndex, int.Parse(pointsText.text));
-         levelCompleteCanvas.SetActive(true);
-         finalPoints.text = pointsText.text;
-         coinsAmount.text = SetStars().ToString();
-
-
-         //_player.GetComponent<SphereCollider>().enabled = false; //prepare player for not to die
-         _player.jumpForce = 0;
-         _player.GetComponent<Rigidbody>().useGravity = false;
-         _player.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionY;
-         yield return new WaitForSeconds(1.5f);
-         _player.transform.position = new Vector3(_player.transform.position.x, 0f, _player.transform.position.z);
-     }*/
     public void LevelComplete()
     {
         Time.timeScale = 1f;
@@ -170,21 +210,6 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1f;
     }
 
-    /* IEnumerator ContinuePlaying() { 
-     }
-    IEnumerator ContinuePlaying()
-    {
-        // _player.GetComponent<Rigidbody>().velocity = _player.originalSpeed; //stop movement
-        _player = FindObjectOfType<PlayerMovement>();
-        continuePanel.SetActive(false);
-        _player.hasDeadBefore = true;
-        _player.GetComponent<Rigidbody>().useGravity = true;
-        ReanudeConstraints();
-
-        _player.GetComponent<MeshRenderer>().enabled = true;
-        yield return new WaitForSeconds(1.2f);
-        Time.timeScale = 1f;
-    }*/
     public void DontContinue() {
         // _player.hasDeadBefore = true;
         _player = FindObjectOfType<PlayerMovement>();
@@ -230,6 +255,11 @@ public class GameManager : MonoBehaviour
                 AudioManager.instance.Play("ButtonClick");
                 SceneManager.LoadScene("HardLevelSelection");
                 break;
+            case "Arcade":
+                AudioManager.instance.StopSong(song);
+                AudioManager.instance.Play("ButtonClick");
+                SceneManager.LoadScene("ArcadeLevelSelection");
+                break;
         }
     }
 
@@ -239,5 +269,12 @@ public class GameManager : MonoBehaviour
         Debug.Log("coins:" + coins);
         Debug.Log("newCoins:" + newCoins);
         PlayerPrefs.SetInt("Coins", newCoins);
+    }
+
+    //used for get +1 silver in ads:
+    public void SumSilver() {
+        int pCoins = PlayerPrefs.GetInt("Coins");
+        int coins = pCoins + 1;
+        PlayerPrefs.SetInt("Coins", coins);
     }
 }

@@ -4886,6 +4886,7 @@ GameObject:
   - component: {fileID: 1179811671098850934}
   - component: {fileID: 1179811671098850935}
   - component: {fileID: 7795185137549903518}
+  - component: {fileID: 6533220259096331841}
   m_Layer: 0
   m_Name: Player Billiard
   m_TagString: Player
@@ -5003,6 +5004,8 @@ MonoBehaviour:
   playerSpeed: 200
   originalSpeed: 0
   jumpForce: 0
+  _canJump: 1
+  isDead: 0
   unlocked: 0
   playerName: Billiard 8
 --- !u!114 &7795185137549903518
@@ -5018,6 +5021,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 0
+--- !u!95 &6533220259096331841
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179811671098850929}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4787f3fa11ba15f4fa19fbf14afc717a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1179811671942881048
 GameObject:
   m_ObjectHideFlags: 0

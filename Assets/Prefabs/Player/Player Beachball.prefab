@@ -342,7 +342,7 @@ GameObject:
   - component: {fileID: 6089740642596386779}
   m_Layer: 0
   m_Name: Player Beachball
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -451,6 +451,8 @@ MonoBehaviour:
   playerSpeed: 200
   originalSpeed: 0
   jumpForce: 0
+  _canJump: 1
+  isDead: 0
   unlocked: 0
   playerName: Beachball
 --- !u!114 &3965622102658646468

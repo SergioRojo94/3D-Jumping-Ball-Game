@@ -42,10 +42,16 @@ public class CreatorBehaviour : MonoBehaviour
     //methods for arcade level:
     void Increase()
     {
-        speed += 5;
+        speed += 8;
+        Debug.Log(gameObject.name + speed);
     }
     public void IncreaseSpeed()
     {
-        InvokeRepeating("Increase", 0f, 10f);
+        InvokeRepeating("Increase", 0f, 5f);
+    }
+
+    public void ExitGame()
+    {
+        Application.Quit();
     }
 }

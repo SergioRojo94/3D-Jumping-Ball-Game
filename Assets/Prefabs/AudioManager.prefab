@@ -111,7 +111,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 44bd9b2259ff3a14980ee36bc55e14de, type: 3}
     volume: 1
     pitch: 1
-    originalVolume: 1
+    originalVolume: 0.9
     loop: 0
     source: {fileID: 0}
   - name: Wood

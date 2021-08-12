@@ -19,7 +19,6 @@ public class CheckStartButtons : MonoBehaviour
 
     void Check() {
         _player = FindObjectOfType<PlayerMovement>();
-
         if (_player.unlocked == true) {
             buttonStart.SetActive(true);
             buttonTry.SetActive(false);

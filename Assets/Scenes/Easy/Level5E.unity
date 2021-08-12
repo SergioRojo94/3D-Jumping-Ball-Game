@@ -501,7 +501,7 @@ PrefabInstance:
     - target: {fileID: 1107487109336205086, guid: e613d7bb71f33b147b01ec7b2de5931b, type: 3}
       propertyPath: SkyBoxMaterialsArray.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 93d43b027dc267444af7412b8e607dbd, type: 2}
+      objectReference: {fileID: 2100000, guid: d07d2172e76d3fa429e80a14d2ae3616, type: 2}
     - target: {fileID: 2360895073554739202, guid: e613d7bb71f33b147b01ec7b2de5931b, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -674,6 +674,10 @@ PrefabInstance:
     - target: {fileID: 1783279336543677361, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
       propertyPath: goalPoints
       value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783279336543677361, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
+      propertyPath: levelIndex
+      value: 5E
       objectReference: {fileID: 0}
     - target: {fileID: 1783279336543677361, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
       propertyPath: star1Points

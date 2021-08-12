@@ -13,12 +13,14 @@ public class GoToScene : MonoBehaviour
             //  AudioManager.instance.StopSong(AudioManager.instance.songName);
         }
         else if (SceneManager.GetActiveScene().name == "EasyLevelSelection" || SceneManager.GetActiveScene().name == "MediumLevelSelection" ||
-                   SceneManager.GetActiveScene().name == "HardLevelSelection")
+                   SceneManager.GetActiveScene().name == "HardLevelSelection" || SceneManager.GetActiveScene().name == "ArcadeLevelSelection")
         {
             AudioManager.instance.Play("ButtonClick");
         }
         else {
             AudioManager.instance.StopSong(FindObjectOfType<GameManager>().song);
+            if (FindObjectOfType<GameManager>() == null)
+                AudioManager.instance.StopSong(AudioManager.instance.songName);
             AudioManager.instance.Play("ButtonClick");
         }
         SceneManager.LoadScene(_scene);

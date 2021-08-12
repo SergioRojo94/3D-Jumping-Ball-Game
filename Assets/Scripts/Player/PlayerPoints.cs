@@ -15,5 +15,6 @@ public class PlayerPoints : MonoBehaviour
             PlayerPrefs.SetInt("Lv" + gm.levelIndex, points);
         PlayerPrefs.SetInt("Points", points);
         gm.UpdateText();
+        gm.CheckArcadeRewards();
     }
 }

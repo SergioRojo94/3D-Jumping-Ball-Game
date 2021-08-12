@@ -219,8 +219,28 @@ PrefabInstance:
       value: Ascension
       objectReference: {fileID: 0}
     - target: {fileID: 1783279336543677361, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
+      propertyPath: _pFluid
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783279336543677361, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
+      propertyPath: _pBarrels
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783279336543677361, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
+      propertyPath: _pBubbles
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783279336543677361, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
+      propertyPath: difficulty
+      value: Medium
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783279336543677361, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
       propertyPath: goalPoints
       value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783279336543677361, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
+      propertyPath: levelIndex
+      value: 5M
       objectReference: {fileID: 0}
     - target: {fileID: 1783279336543677361, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
       propertyPath: star1Points
@@ -229,6 +249,14 @@ PrefabInstance:
     - target: {fileID: 1783279336543677361, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
       propertyPath: star2Points
       value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783279336543677361, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
+      propertyPath: _pWaterfalls
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783279336543677361, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
+      propertyPath: _pTowerBarrels
+      value: 55
       objectReference: {fileID: 0}
     - target: {fileID: 1783279336543677372, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
       propertyPath: m_Name
@@ -544,36 +572,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1356285766218072119, guid: f1d6e9f767c1caf4ab1479f6f4ed7071, type: 3}
       propertyPath: obstacles.Array.size
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1356285766218072119, guid: f1d6e9f767c1caf4ab1479f6f4ed7071, type: 3}
       propertyPath: obstacles.Array.data[0]
       value: 
-      objectReference: {fileID: 6087901203729802030, guid: fbeed939fcd4f974aac97b38885edb4c, type: 3}
+      objectReference: {fileID: 6087901203729802030, guid: dc87bf315eb5eab4e9c0e5e89435bfc2, type: 3}
     - target: {fileID: 1356285766218072119, guid: f1d6e9f767c1caf4ab1479f6f4ed7071, type: 3}
       propertyPath: obstacles.Array.data[1]
       value: 
-      objectReference: {fileID: 6087901203729802030, guid: 8933c57270f7bcc4e85f2a0035394734, type: 3}
+      objectReference: {fileID: 6087901203729802030, guid: 31e4c08145d7214439c936758c40fe53, type: 3}
     - target: {fileID: 1356285766218072119, guid: f1d6e9f767c1caf4ab1479f6f4ed7071, type: 3}
       propertyPath: obstacles.Array.data[2]
       value: 
-      objectReference: {fileID: 6087901203729802030, guid: 31e4c08145d7214439c936758c40fe53, type: 3}
+      objectReference: {fileID: 6087901203729802030, guid: a8ceb6786baeba8428d25a5297d9bffa, type: 3}
     - target: {fileID: 1356285766218072119, guid: f1d6e9f767c1caf4ab1479f6f4ed7071, type: 3}
       propertyPath: obstacles.Array.data[3]
       value: 
-      objectReference: {fileID: 6087901203729802030, guid: a8ceb6786baeba8428d25a5297d9bffa, type: 3}
+      objectReference: {fileID: 6087901203729802030, guid: c72880e2b2ea7224eb4b255e836f5286, type: 3}
     - target: {fileID: 1356285766218072119, guid: f1d6e9f767c1caf4ab1479f6f4ed7071, type: 3}
       propertyPath: obstacles.Array.data[4]
       value: 
-      objectReference: {fileID: 6087901203729802030, guid: c72880e2b2ea7224eb4b255e836f5286, type: 3}
+      objectReference: {fileID: 6087901203729802030, guid: 77b9fb9fce292a047abbe9c57137cd73, type: 3}
     - target: {fileID: 1356285766218072119, guid: f1d6e9f767c1caf4ab1479f6f4ed7071, type: 3}
       propertyPath: obstacles.Array.data[5]
       value: 
-      objectReference: {fileID: 6087901203729802030, guid: 77b9fb9fce292a047abbe9c57137cd73, type: 3}
+      objectReference: {fileID: 6087901203729802030, guid: e01a655a787444147a6379ed985d2c83, type: 3}
     - target: {fileID: 1356285766218072119, guid: f1d6e9f767c1caf4ab1479f6f4ed7071, type: 3}
       propertyPath: obstacles.Array.data[6]
       value: 
-      objectReference: {fileID: 6087901203729802030, guid: e01a655a787444147a6379ed985d2c83, type: 3}
+      objectReference: {fileID: 6087901203729802030, guid: 8ba6cb0a1811b8e4891e7788bb893a40, type: 3}
     - target: {fileID: 1356285766218072119, guid: f1d6e9f767c1caf4ab1479f6f4ed7071, type: 3}
       propertyPath: obstacles.Array.data[7]
       value: 

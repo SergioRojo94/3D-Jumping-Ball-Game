@@ -427,7 +427,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1356285766218072119, guid: f1d6e9f767c1caf4ab1479f6f4ed7071, type: 3}
       propertyPath: obstacles.Array.size
-      value: 9
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1356285766218072119, guid: f1d6e9f767c1caf4ab1479f6f4ed7071, type: 3}
       propertyPath: obstacles.Array.data[0]
@@ -461,6 +461,18 @@ PrefabInstance:
       propertyPath: obstacles.Array.data[8]
       value: 
       objectReference: {fileID: 6087901203729802030, guid: 8ba6cb0a1811b8e4891e7788bb893a40, type: 3}
+    - target: {fileID: 1356285766218072119, guid: f1d6e9f767c1caf4ab1479f6f4ed7071, type: 3}
+      propertyPath: obstacles.Array.data[9]
+      value: 
+      objectReference: {fileID: 6087901203729802030, guid: 06628b024e3c88d4a8af24bbfe813de0, type: 3}
+    - target: {fileID: 1356285766218072119, guid: f1d6e9f767c1caf4ab1479f6f4ed7071, type: 3}
+      propertyPath: obstacles.Array.data[10]
+      value: 
+      objectReference: {fileID: 6087901203729802030, guid: dc87bf315eb5eab4e9c0e5e89435bfc2, type: 3}
+    - target: {fileID: 1356285766218072119, guid: f1d6e9f767c1caf4ab1479f6f4ed7071, type: 3}
+      propertyPath: obstacles.Array.data[11]
+      value: 
+      objectReference: {fileID: 6087901203729802030, guid: 77b9fb9fce292a047abbe9c57137cd73, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1d6e9f767c1caf4ab1479f6f4ed7071, type: 3}
 --- !u!1001 &1398770252
@@ -792,8 +804,28 @@ PrefabInstance:
       value: A Pure Embrace
       objectReference: {fileID: 0}
     - target: {fileID: 1783279336543677361, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
+      propertyPath: _pFluid
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783279336543677361, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
+      propertyPath: difficulty
+      value: Hard
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783279336543677361, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
       propertyPath: goalPoints
       value: 37
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783279336543677361, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
+      propertyPath: levelIndex
+      value: 3H
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783279336543677361, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
+      propertyPath: _pWaterfalls
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783279336543677361, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
+      propertyPath: _pTowerBarrels
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1783279336543677372, guid: 591ba0e83952ec34c9af37b76a7bc198, type: 3}
       propertyPath: m_Name
@@ -883,7 +915,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67cefaf2e88150548bb4085ed9a1a1ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _degreesPerSecond: 10
+  _degreesPerSecond: 8
   target: {fileID: 1398770253}
   targetArray:
   - {fileID: 1398770257}

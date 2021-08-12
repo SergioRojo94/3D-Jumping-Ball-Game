@@ -2,6 +2,7 @@
 using UnityEngine;
 using System;
 using Random = UnityEngine.Random;
+using Yodo1.MAS;
 
 public class AudioManager : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class AudioManager : MonoBehaviour
 
     void Awake()
     {
+        
         if (instance == null)
             instance = this;
         else {
@@ -34,6 +36,7 @@ public class AudioManager : MonoBehaviour
     }
 
     void Start() {
+        
         int random = Random.Range(0, 5);
         songName = sounds[random].name;
         Play(songName);
@@ -81,4 +84,8 @@ public class AudioManager : MonoBehaviour
         }
         aSource.enabled = true;
     }
+        
+
+
+   
 }

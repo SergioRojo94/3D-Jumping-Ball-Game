@@ -20,17 +20,23 @@ public class LevelSelection : MonoBehaviour
 
     private void Update()
     {
-        UpdateLevelImage();
-        UpdateLevelStatus();
+        if(SceneManager.GetActiveScene().name != "ArcadeLevelSelection") {
+            UpdateLevelImage();
+            UpdateLevelStatus();
+        }
+        
     }
 
     private void UpdateLevelStatus()
     {
         //if the current lv is 5, the pre should be 4
+        
         int previousLevelNum = int.Parse(gameObject.name) - 1;
+        
         if (PlayerPrefs.GetInt("Lv" + previousLevelNum.ToString()) > 0)//If the firts level star is bigger than 0, second level can play
         {
             unlocked = true;
+            Debug.Log(previousLevelNum + "previouslvl" + unlocked);
         }
     }
 
@@ -68,4 +74,7 @@ public class LevelSelection : MonoBehaviour
         }
     }
 
+    public void GoToShop() {
+        SceneManager.LoadScene("Shop");
+    }
 }

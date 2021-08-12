@@ -204,6 +204,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6230565}
   m_CullTransparentMesh: 0
+--- !u!114 &33172024 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1356285766218072119, guid: f1d6e9f767c1caf4ab1479f6f4ed7071, type: 3}
+  m_PrefabInstance: {fileID: 1356285765328876405}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a2be3c48706dac45aa40dfe8ed1f157, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &48566503 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2696711291458750644, guid: e613d7bb71f33b147b01ec7b2de5931b, type: 3}
@@ -642,7 +653,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c78cac6e22433d24994340a5e89f6ba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _scene: ArcadeScene
+  _scene: ArcadeLevelSelection
 --- !u!1 &102014661 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2360895074252690370, guid: e613d7bb71f33b147b01ec7b2de5931b, type: 3}
@@ -4461,6 +4472,7 @@ GameObject:
   - component: {fileID: 1767087078}
   - component: {fileID: 1767087077}
   - component: {fileID: 1767087079}
+  - component: {fileID: 1767087080}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -4562,6 +4574,18 @@ MonoBehaviour:
   - {fileID: 304548815}
   - {fileID: 160788364}
   - {fileID: 102014661}
+--- !u!114 &1767087080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1767087076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 797b4dbfd5220c141998f722bedd5b87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1779641393
 GameObject:
   m_ObjectHideFlags: 0
@@ -5129,7 +5153,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2091698228}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 33172024}
+        m_TargetAssemblyTypeName: CreatorBehaviour, Assembly-CSharp
+        m_MethodName: ExitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &2091698228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5281,6 +5317,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   song: 
+  difficulty: 
+  banner: 0
   pointsText: {fileID: 0}
   recordPoints: {fileID: 0}
   star1: {fileID: 0}
@@ -5308,6 +5346,7 @@ MonoBehaviour:
   _pWaterfalls: 0
   _pBlueFire: 0
   _pVioletFire: 0
+  _pFluid: 0
 --- !u!1 &2139066503
 GameObject:
   m_ObjectHideFlags: 0
@@ -5418,6 +5457,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 283.88
       objectReference: {fileID: 0}
+    - target: {fileID: 387757555154104456, guid: e613d7bb71f33b147b01ec7b2de5931b, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1107487109336205080, guid: e613d7bb71f33b147b01ec7b2de5931b, type: 3}
       propertyPath: m_Name
       value: ArrayPlayer
@@ -5468,7 +5511,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1107487109336205086, guid: e613d7bb71f33b147b01ec7b2de5931b, type: 3}
       propertyPath: SkyBoxMaterialsArray.Array.size
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 1107487109336205086, guid: e613d7bb71f33b147b01ec7b2de5931b, type: 3}
       propertyPath: SkyBoxMaterialsArray.Array.data[0]
@@ -5513,15 +5556,15 @@ PrefabInstance:
     - target: {fileID: 1107487109336205086, guid: e613d7bb71f33b147b01ec7b2de5931b, type: 3}
       propertyPath: SkyBoxMaterialsArray.Array.data[10]
       value: 
-      objectReference: {fileID: 2100000, guid: e9705e00f62f62849b89fc9fd55aa0e3, type: 2}
+      objectReference: {fileID: 2100000, guid: 93d43b027dc267444af7412b8e607dbd, type: 2}
     - target: {fileID: 1107487109336205086, guid: e613d7bb71f33b147b01ec7b2de5931b, type: 3}
       propertyPath: SkyBoxMaterialsArray.Array.data[11]
       value: 
-      objectReference: {fileID: 2100000, guid: 93d43b027dc267444af7412b8e607dbd, type: 2}
+      objectReference: {fileID: 2100000, guid: 13fde35df00f2384598d84d32a7bacd8, type: 2}
     - target: {fileID: 1107487109336205086, guid: e613d7bb71f33b147b01ec7b2de5931b, type: 3}
       propertyPath: SkyBoxMaterialsArray.Array.data[12]
       value: 
-      objectReference: {fileID: 2100000, guid: 13fde35df00f2384598d84d32a7bacd8, type: 2}
+      objectReference: {fileID: 2100000, guid: d07d2172e76d3fa429e80a14d2ae3616, type: 2}
     - target: {fileID: 1107487109336205086, guid: e613d7bb71f33b147b01ec7b2de5931b, type: 3}
       propertyPath: SkyBoxMaterialsArray.Array.data[13]
       value: 

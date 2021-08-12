@@ -221,7 +221,7 @@ ParticleSystem:
     startColor:
       serializedVersion: 2
       minMaxState: 2
-      minColor: {r: 0.3584906, g: 0.23891726, b: 0.22456391, a: 1}
+      minColor: {r: 0, g: 0.81960785, b: 0.03137255, a: 0.6627451}
       maxColor: {r: 0.49056602, g: 0.28675154, b: 0.23325025, a: 1}
       maxGradient:
         serializedVersion: 2
@@ -4999,10 +4999,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e9dffd30d656d54d8443bb7dc8a24a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasDeadBefore: 0
   playerSpeed: 200
+  originalSpeed: 0
   jumpForce: 0
+  _canJump: 1
+  isDead: 0
   unlocked: 0
-  playerName: Wood
+  playerName: Coconut
 --- !u!114 &7795185137549903518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5237,7 +5241,7 @@ ParticleSystem:
     startColor:
       serializedVersion: 2
       minMaxState: 2
-      minColor: {r: 0.2924528, g: 0.18473186, b: 0.14733, a: 1}
+      minColor: {r: 0, g: 0.8207547, b: 0.030243812, a: 1}
       maxColor: {r: 0.509434, g: 0.34908012, b: 0.20377359, a: 1}
       maxGradient:
         serializedVersion: 2

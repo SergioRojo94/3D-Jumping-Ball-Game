@@ -32,12 +32,12 @@ public class MainManager : MonoBehaviour
 
     void LoadCharacter() {
         int selectedCharacter = PlayerPrefs.GetInt("selectedCharacter");
-        Debug.Log(selectedCharacter);
         foreach (GameObject objX in PlayerArray)
             objX.SetActive(false);
 
         if (PlayerArray[selectedCharacter])
             PlayerArray[selectedCharacter].SetActive(true);
+        Debug.Log("selected" + selectedCharacter);
         
     }
 }

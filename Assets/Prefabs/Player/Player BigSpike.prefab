@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 357640687304664210}
   m_Layer: 0
   m_Name: Player BigSpike
-  m_TagString: enemy
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -130,8 +130,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e9dffd30d656d54d8443bb7dc8a24a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasDeadBefore: 0
   playerSpeed: 200
+  originalSpeed: 0
   jumpForce: 0
+  _canJump: 1
+  isDead: 0
   unlocked: 0
   playerName: Big SpikeBall
 --- !u!114 &6992137522683922845

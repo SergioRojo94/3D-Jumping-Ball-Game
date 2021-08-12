@@ -180,7 +180,7 @@ GameObject:
   - component: {fileID: 2774013015611035051}
   m_Layer: 0
   m_Name: Player Volleyball
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -285,8 +285,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e9dffd30d656d54d8443bb7dc8a24a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasDeadBefore: 0
   playerSpeed: 200
+  originalSpeed: 0
   jumpForce: 0
+  _canJump: 1
+  isDead: 0
   unlocked: 0
   playerName: Volleyball
 --- !u!114 &5748289090753293260
@@ -315,7 +319,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 07f3caf9bfc91904880ec415c0cb26a7, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1

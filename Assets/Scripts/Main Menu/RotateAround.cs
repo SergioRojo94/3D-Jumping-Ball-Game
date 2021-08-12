@@ -19,12 +19,12 @@ public class RotateAround : MonoBehaviour
 
     //methods for arcade level:
     void Increase() {
-        if (_degreesPerSecond < 8)
-            _degreesPerSecond += 1;
+        if (_degreesPerSecond < 1)
+            _degreesPerSecond += 0.5f;
         else
             return;
     }
     public void IncreaseSpeed() {
-        InvokeRepeating("Increase", 0f, 45f);
+        InvokeRepeating("Increase", 0f, 55f);
     }
 }
